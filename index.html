@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPandZone - Play Free Online Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">🎮 XPandZone</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search games..." id="searchInput">
+                <span>🔍</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Play Amazing Games</h1>
+        <p>5 Free Playable Games - Instant Play!</p>
+    </section>
+
+    <section class="categories">
+        <div class="category-pills">
+            <div class="pill active" data-category="all">🎯 All Games</div>
+            <div class="pill" data-category="puzzle">🧩 Puzzle</div>
+            <div class="pill" data-category="action">⚔️ Action</div>
+        </div>
+    </section>
+
+    <div id="gamesContainer"></div>
+
+    <!-- Game Modal -->
+    <div class="game-modal" id="gameModal">
+        <div class="game-container">
+            <div class="game-header">
+                <h2 id="gameTitle">Game</h2>
+                <button class="close-btn" onclick="closeGame()">✕ Close</button>
+            </div>
+            <div id="gameArea"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 XPandZone. Play responsibly and have fun! 🎮</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="js/games-data.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/memory.js"></script>
+    <script src="js/tictactoe.js"></script>
+    <script src="js/colormatch.js"></script>
+    <script src="js/numberpuzzle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
